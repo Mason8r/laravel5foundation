@@ -1,10 +1,10 @@
 @extends('app')
 
 @section('content')
-<div class="container-fluid">
+<div class="content">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
+		<div class="large-8 large-offset-2 columns">
+			<div class="panel">
 				<div class="panel-heading">Reset Password</div>
 				<div class="panel-body">
 					@if (session('status'))
@@ -14,7 +14,7 @@
 					@endif
 
 					@if (count($errors) > 0)
-						<div class="alert alert-danger">
+						<div class="alert-box">
 							<strong>Whoops!</strong> There were some problems with your input.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)

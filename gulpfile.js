@@ -10,7 +10,16 @@ var elixir = require('laravel-elixir');
  | file for our application, as well as publishing vendor resources.
  |
  */
+elixir(function(mix) {
+    mix.sass('styles.scss');
+});
 
 elixir(function(mix) {
-    mix.less('app.less');
+    mix.scripts([
+    	'vendor/jQuery.js',
+    	'vendor/fastclick.js',
+    	'vendor/modernizer.js',
+    	'vendor/placeholder.js',
+    	'foundation.min.js',
+    ],'public/js/main.js');
 });
