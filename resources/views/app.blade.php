@@ -24,7 +24,7 @@
 	      <h1><a href="/">Laravel</a></h1>
 	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 	  </ul>
 
 	  <section class="top-bar-section">
@@ -54,5 +54,9 @@
 	@yield('content')
 
 	<script src="/js/main.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	
 </body>
 </html>

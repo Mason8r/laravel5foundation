@@ -8,13 +8,13 @@
 				<div class="panel-heading">Reset Password</div>
 				<div class="panel-body">
 					@if (session('status'))
-						<div class="alert alert-success">
+						<div class="alert-box success">
 							{{ session('status') }}
 						</div>
 					@endif
 
 					@if (count($errors) > 0)
-						<div class="alert-box">
+						<div class="alert-box warning">
 							<strong>Whoops!</strong> There were some problems with your input.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
